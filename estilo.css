@@ -130,7 +130,7 @@ height: inherit;
 
 .row3-redes img{
     width: 35px;
-    height: 25px;
+    height: 35px;
 }
 
 .row2-contacto img{
@@ -145,6 +145,11 @@ height: inherit;
 
 .col2-container1{
     width: 200px;
+}
+
+.col2-container1 a {
+    color: white;
+    text-decoration: none;
 }
 
 .col3-container1{
