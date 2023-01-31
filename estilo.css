@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,10 +15,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px ;
-    display: flex;    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;    
 }
 .principal-detalles{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,13 +29,8 @@ body {
 }
 
 .principal-detalles img{
-    width: 500px;
+    width: 80%;
 }
-
-.principal img {
-    width: 30% ;
-} 
- 
 
 h1{
    font-size: 60px;   
@@ -57,15 +55,16 @@ h1 strong {
     
 ul{
     list-style: none;
-    margin: 0px;
-    padding: 0px;
     display: flex;
+    flex-direction: column;
     height: inherit;
-    text-align: right;
+    width: 100%;
+    justify-content: center;
 }
 
 .header li{
-height: inherit;
+    height: 100%;
+    display: flex;
 }
 .header{
     background: rgb(250, 229, 229);
@@ -73,6 +72,7 @@ height: inherit;
     display: flex;        
     justify-content: space-between;
     height: 90px;
+    width: 100vw;
 }      
 .header a{
     color: rgb(180, 172, 96);
@@ -80,15 +80,25 @@ height: inherit;
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
 }  
 
+.logo {
+    width: 30%;
+    display: flex;
+    padding: 5px;
+}
+
+
 .logo img{
-    width: 100px;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
 } 
 
 .menu{
     height: inherit;
+    width: 70%;
+    display: flex;
 }
 .somos {
     color: rgb(20, 24, 1);
@@ -209,4 +219,37 @@ height: inherit;
     padding: 25px 50px 200px 100px;
     margin: 25px 50px 200px 100px;
 }
-    
+    @media (min-width:600px){
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            height: inherit;
+            width: 100%;
+            justify-content:space-around ;
+        }
+        
+        .principal {
+            background: rgb(233, 182, 182);
+            text-align: center;
+            background-image: url('img/fondo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px ;
+            display: flex;
+            flex-direction: row;
+            width: 100vw;    
+        }
+        .principal-detalles{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .principal-detalles img{
+            width: 30%;
+        }
+    }
